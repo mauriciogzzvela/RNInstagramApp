@@ -59,6 +59,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+      MultiDex.install(this);
   }
 
   /**
